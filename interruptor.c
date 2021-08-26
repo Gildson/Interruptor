@@ -15,10 +15,10 @@ int main(){
   
   //counts
   TCCR1A = 0b00000000;
-  //o bit 3 habilita o CTC
+  //the bit 3 enable the CTC
   TCCR1B = 0b00001101;
   
-  OCR1A = 15624;//(16M/(prescaler*ts))-1 onde,
+  OCR1A = 15624;//(16M/(prescaler*ts))-1 where,
   //ts is the time that every interruption is call
 
   //Enable the COMPA
